@@ -26,7 +26,12 @@ import ReactDOM from 'react-dom/client'
 // import App from './02-advanced/02-选项卡-非受控'
 // import App from './02-advanced/03-选项卡-受控'
 // import App from './02-advanced/04-父子通信-表单域'
-import App from './02-advanced/05-Ref-表单域'
+// import App from './02-advanced/05-Ref-表单域'
+// import App from './02-advanced/06-中间人模式'
+// import App from './02-advanced/07-发布订阅模式'
+// import App from './02-advanced/08-context方案'
+// import App from './02-advanced/09-插槽'
+import App from './02-advanced/10-插槽抽屉'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<App />);
