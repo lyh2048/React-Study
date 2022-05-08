@@ -25,7 +25,8 @@ import ReactDOM from 'react-dom/client'
 // import App from './02-advanced/01-子传父'
 // import App from './02-advanced/02-选项卡-非受控'
 // import App from './02-advanced/03-选项卡-受控'
-import App from './02-advanced/04-父子通信-表单域'
+// import App from './02-advanced/04-父子通信-表单域'
+import App from './02-advanced/05-Ref-表单域'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<App />);
