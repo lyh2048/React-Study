@@ -1,17 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+// import App from './01-base/01-class组件'
+// import App from './01-base/02-function组件'
+// import App from './01-base/03-组件嵌套'
+// import App from './01-base/04-组件样式'
+// import App from './01-base/05-事件绑定-1'
+// import App from './01-base/06-事件绑定-2'
+// import App from './01-base/07-ref'
+// import App from './01-base/08-state'
+// import App from './01-base/09-循环渲染'
+// import App from './01-base/10-待办事项'
+// import App from './01-base/11-富文本'
+// import App from './01-base/12-选项卡'
+// import App from './01-base/13-setState同步异步'
+// import App from './01-base/14-betterScroll'
+// import App from './01-base/15-betterScroll-cinema'
+// import App from './01-base/16-props'
+// import App from './01-base/17-props函数式组件'
+// import App from './01-base/18-属性vs状态'
+// import App from './01-base/19-非受控'
+// import App from './01-base/20-受控'
+// import App from './01-base/21-受控cinema'
+// import App from './01-base/22-受控-待办事项'
+// import App from './02-advanced/01-子传父'
+// import App from './02-advanced/02-选项卡-非受控'
+// import App from './02-advanced/03-选项卡-受控'
+import App from './02-advanced/04-父子通信-表单域'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById('root'))
+root.render(<App />);
