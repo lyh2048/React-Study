@@ -44,7 +44,10 @@ import ReactDOM from 'react-dom/client'
 // import App from './02-advanced/21-新生命周期-1-案例'
 // import App from './02-advanced/22-新生命周期-2'
 // import App from './02-advanced/23-新生命周期-2-案例'
-import App from './02-advanced/24-性能优化'
+// import App from './02-advanced/24-性能优化'
+// import App from './02-advanced/25-swiper-同步'
+// import App from './02-advanced/26-swiper-异步'
+import App from './02-advanced/27-swiper-组件'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
