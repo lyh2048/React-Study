@@ -33,7 +33,19 @@ import ReactDOM from 'react-dom/client'
 // import App from './02-advanced/09-插槽'
 // import App from './02-advanced/10-插槽抽屉'
 // import App from './02-advanced/11-生命周期-初始化'
-import App from './02-advanced/12-生命周期-初始化案例'
+// import App from './02-advanced/12-生命周期-初始化案例'
+// import App from './02-advanced/14-生命周期-更新阶段1'
+// import App from './02-advanced/15-生命周期-更新阶段2'
+// import App from './02-advanced/16-生命周期-更新阶段2-案例'
+// import App from './02-advanced/17-生命周期-更新阶段3'
+// import App from './02-advanced/18-生命周期-更新阶段3-案例'
+// import App from './02-advanced/19-生命周期-销毁'
+// import App from './02-advanced/20-新生命周期-1'
+// import App from './02-advanced/21-新生命周期-1-案例'
+// import App from './02-advanced/22-新生命周期-2'
+// import App from './02-advanced/23-新生命周期-2-案例'
+import App from './02-advanced/24-性能优化'
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(<App />);
