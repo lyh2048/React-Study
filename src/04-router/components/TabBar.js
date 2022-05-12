@@ -4,7 +4,7 @@ import './css/TabBar.css'
 
 export default function TabBar() {
     return (
-        <div>
+        <div className={"tab"}>
             <ul style={{display: 'flex', listStyle: 'none', justifyContent: 'space-around'}}>
                 <li>
                     <NavLink to={"/films"}>电影</NavLink>
