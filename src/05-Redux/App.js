@@ -11,7 +11,7 @@ export default function App() {
         store.subscribe(() => {
             console.log('在App中订阅')
             console.log(store.getState())
-            setShowState(store.getState().show)
+            setShowState(store.getState().TabBarReducer.show)
         })
     }, [])
     return (

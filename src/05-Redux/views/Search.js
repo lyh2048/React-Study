@@ -1,12 +1,9 @@
 import React, {useEffect, useState} from "react"
-import store from "../redux/store"
+import store from "../redux/store";
 import getCinemaListAction from "../redux/actionCreator/getCinemaListAction";
 
-
-export default function Cinemas(props) {
-    const [cityName] = useState(store.getState().CityReducer.cityName)
+export default function Search() {
     const [cinemaList, setCinemaList] = useState(store.getState().CinemaListReducer.list)
-
     useEffect(() => {
         if (store.getState().CinemaListReducer.list.length === 0) {
             console.log('从后台取数据')
@@ -24,10 +21,7 @@ export default function Cinemas(props) {
 
     return (
         <div>
-            <div style={{display: 'flex', justifyContent: 'space-around'}}>
-                <div onClick={() => props.history.push(`/city`)}>{cityName}</div>
-                <div onClick={() => props.history.push(`/cinemas/search`)}>搜索</div>
-            </div>
+            <input />
             {
                 cinemaList.map(item => <dl key={item.cinemaId}>
                     <dt>{item.name}</dt>

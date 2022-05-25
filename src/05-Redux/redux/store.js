@@ -1,19 +1,29 @@
-import { createStore } from 'redux'
+import {applyMiddleware, combineReducers, createStore, compose} from 'redux'
+import CityReducer from "./reducers/CityReducer"
+import TabBarReducer from "./reducers/TabBarReducer"
+import CinemaListReducer from "./reducers/CinemaListReducer"
+import reduxThunk from 'redux-thunk'
+import reduxPromise from 'redux-promise'
 
-const reducer = (prevState, action) => {
-    const newState = {...prevState}
-    switch (action.type) {
-        case 'hideTabBar':
-            newState.show = false
-            return newState
-        case 'showTabBar':
-            newState.show = true
-            return newState
-        default:
-            return prevState
-    }
+
+const middleware = {
+    reduxThunk,
+    reduxPromise
 }
 
-const store = createStore(reducer, {show: true})
+const reducer = combineReducers({
+    CityReducer,
+    TabBarReducer,
+    CinemaListReducer
+})
+
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const store = createStore(reducer, /* preloadedState, */ composeEnhancers(
+    applyMiddleware(...middleware)
+))
 
 export default store
+
+// 纯函数
+// 1. 对外界没有副作用
+// 2. 同样的输入得到同样的输出
