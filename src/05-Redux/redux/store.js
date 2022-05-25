@@ -6,11 +6,6 @@ import reduxThunk from 'redux-thunk'
 import reduxPromise from 'redux-promise'
 
 
-const middleware = {
-    reduxThunk,
-    reduxPromise
-}
-
 const reducer = combineReducers({
     CityReducer,
     TabBarReducer,
@@ -19,7 +14,7 @@ const reducer = combineReducers({
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(reducer, /* preloadedState, */ composeEnhancers(
-    applyMiddleware(...middleware)
+    applyMiddleware(reduxThunk, reduxPromise)
 ))
 
 export default store

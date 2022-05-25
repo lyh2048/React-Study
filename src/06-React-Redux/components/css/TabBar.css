@@ -1,0 +1,23 @@
+.active {
+    color: red;
+}
+
+.tab {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.tab ul {
+    display: flex;
+    list-style: none;
+}
+
+.tab li {
+    flex: 1;
+}

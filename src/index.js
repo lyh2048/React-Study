@@ -65,8 +65,18 @@ import ReactDOM from 'react-dom/client'
 // import App from './03-hooks/15-useReducer3'
 // import App from './03-hooks/16-自定义hooks'
 // import App from './04-router/App'
-import App from './05-Redux/App'
+// import App from './05-Redux/App'
+import App from './06-React-Redux/App'
+import {Provider} from 'react-redux'
+import {store, persistor} from "./06-React-Redux/redux/store"
+import { PersistGate } from 'redux-persist/integration/react'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(<App />);
+root.render(
+    <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+            <App />
+        </PersistGate>
+    </Provider>
+);
